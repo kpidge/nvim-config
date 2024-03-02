@@ -1,7 +1,7 @@
+vim.g.maplocalleader = ','
+
 -- Set the compiler to ruff
 vim.api.nvim_cmd({ cmd = "compiler", args = { "ruff" } }, {})
-
-vim.g.maplocalleader = ','
 vim.keymap.set('n', '<LocalLeader>l', ':make %<CR><CR>:cope<CR>', { buffer = 0 })
 
 -- TODO: Sort out formatting with gq/= & range formatting
